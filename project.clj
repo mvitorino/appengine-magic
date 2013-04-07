@@ -1,6 +1,6 @@
 (defproject appengine-magic "0.5.1-SNAPSHOT"
   :description "Google App Engine library for Clojure."
-  :url "https://github.com/gcv/cupboard"
+  :url "https://github.com/gcv/appengine-magic"
   :min-lein-version "2.0.0"
   :repositories {"releases" "http://appengine-magic-mvn.googlecode.com/svn/releases/"
                  "snapshots" "http://appengine-magic-mvn.googlecode.com/svn/snapshots/"}

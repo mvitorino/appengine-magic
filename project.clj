@@ -2,8 +2,12 @@
   :description "Google App Engine library for Clojure."
   :url "https://github.com/gcv/appengine-magic"
   :min-lein-version "2.0.0"
-  :repositories {"releases" "http://appengine-magic-mvn.googlecode.com/svn/releases/"
+  :repositories {"private" {:url "s3p://com.blue.mvn/releases"
+                             :username :env/AWS_ACCESS_KEY
+                             :passphrase :env/AWS_SECRET_KEY}
+                 "releases" "http://appengine-magic-mvn.googlecode.com/svn/releases/"
                  "snapshots" "http://appengine-magic-mvn.googlecode.com/svn/snapshots/"}
+  :plugins [[s3-wagon-private "1.1.2"]]
   :exclusions [org.clojure/clojure]
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [ring/ring-core "1.1.0"]

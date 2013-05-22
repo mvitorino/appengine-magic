@@ -24,10 +24,10 @@
                  [taglibs/standard "1.1.2"] ; repackaged-appengine-jakarta-standard-1.1.2.jar
                  [commons-el "1.0"]
                  ;; main App Engine libraries
-                 [com.google.appengine/appengine-api-1.0-sdk "1.7.4"]
-                 [com.google.appengine/appengine-api-labs "1.7.4"]
-                 [com.google.appengine/appengine-api-stubs "1.7.4"]
-                 [com.google.appengine/appengine-local-runtime "1.7.4"]
-                 [com.google.appengine/appengine-local-runtime-shared "1.7.4"]
-                 [com.google.appengine/appengine-testing "1.7.4"]
-                 [com.google.appengine/appengine-tools-api "1.7.4"]])
+                 [com.google.appengine/appengine-api-1.0-sdk "1.8.0"]
+                 [com.google.appengine/appengine-api-labs "1.8.0"]
+                 [com.google.appengine/appengine-api-stubs "1.8.0"]
+                 [com.google.appengine/appengine-local-runtime "1.8.0"]
+                 [com.google.appengine/appengine-local-runtime-shared "1.8.0"]
+                 [com.google.appengine/appengine-testing "1.8.0"]
+                 [com.google.appengine/appengine-tools-api "1.8.0"]])

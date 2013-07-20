@@ -1,9 +1,13 @@
 (defproject appengine-magic "0.5.1-SNAPSHOT"
   :description "Google App Engine library for Clojure."
-  :url "https://github.com/gcv/cupboard"
+  :url "https://github.com/gcv/appengine-magic"
   :min-lein-version "2.0.0"
   :repositories {"releases" "http://appengine-magic-mvn.googlecode.com/svn/releases/"
                  "snapshots" "http://appengine-magic-mvn.googlecode.com/svn/snapshots/"}
+  :deploy-repositories {"private" {:url "s3p://com.blue.mvn/releases"
+                                   :username :env/AWS_ACCESS_KEY
+                                   :passphrase :env/AWS_SECRET_KEY}}
+  :plugins [[s3-wagon-private "1.1.2"]]
   :exclusions [org.clojure/clojure]
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [ring/ring-core "1.1.0"]
@@ -22,10 +26,10 @@
                  [leiningen "2.0.0"]
                  [lancet "1.0.2"]
                  ;; main App Engine libraries
-                 [com.google.appengine/appengine-api-1.0-sdk "1.7.4"]
-                 [com.google.appengine/appengine-api-labs "1.7.4"]
-                 [com.google.appengine/appengine-api-stubs "1.7.4"]
-                 [com.google.appengine/appengine-local-runtime "1.7.4"]
-                 [com.google.appengine/appengine-local-runtime-shared "1.7.4"]
-                 [com.google.appengine/appengine-testing "1.7.4"]
-                 [com.google.appengine/appengine-tools-api "1.7.4"]])
+                 [com.google.appengine/appengine-api-1.0-sdk "1.8.0"]
+                 [com.google.appengine/appengine-api-labs "1.8.0"]
+                 [com.google.appengine/appengine-api-stubs "1.8.0"]
+                 [com.google.appengine/appengine-local-runtime "1.8.0"]
+                 [com.google.appengine/appengine-local-runtime-shared "1.8.0"]
+                 [com.google.appengine/appengine-testing "1.8.0"]
+                 [com.google.appengine/appengine-tools-api "1.8.0"]])
